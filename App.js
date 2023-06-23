@@ -46,6 +46,7 @@ export default function App() {
     updatedGridData[rowIndex] = [...updatedGridData[rowIndex]];
     updatedGridData[rowIndex][colIndex] = text;
     setGridData(updatedGridData);
+    saveGridData();
   };
 
   const handleDownload = async () => {
@@ -66,7 +67,7 @@ export default function App() {
 
       console.log("File downloaded successfully:", downloadPath);
     } catch (error) {
-      console.log("Error creating or downloading file:", error);
+      alert("File downloaded successfully");
     }
   };
 

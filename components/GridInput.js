@@ -1,5 +1,5 @@
-import React from 'react';
-import { TextInput, View, StyleSheet } from 'react-native';
+import React from "react";
+import { TextInput, View, StyleSheet } from "react-native";
 
 const GridInput = ({ value, onChange }) => {
   return (
@@ -16,12 +16,12 @@ const GridInput = ({ value, onChange }) => {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   input: {
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: "gray",
     width: 100,
   },
 });
